@@ -27,11 +27,9 @@ function App() {
   }, [length, numberAllowed, charAllowed])
 
 
-
-
   useEffect(() => {
     passwordGenerator()
-  }, [length, numberAllowed, charAllowed, setPassword])
+  }, [length, numberAllowed, charAllowed, setPassword])   // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
 
